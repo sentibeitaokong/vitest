@@ -1,3 +1,4 @@
+//测试初始化固定装置
 import {test} from "./initializeFixtures.ts";
 
 

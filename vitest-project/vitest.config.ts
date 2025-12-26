@@ -1,8 +1,9 @@
-import  { defineProject, mergeConfig } from 'vitest/config'
+import  { defineConfig, mergeConfig } from 'vitest/config'
 import viteConfig from './vite.config'
+import customEnvironment from "./src/packages/jsdomEnvironment/CustomEnvironment/customEnvironment";
 import { playwright } from '@vitest/browser-playwright'
 import vue from '@vitejs/plugin-vue'
-export default mergeConfig(viteConfig, defineProject({
+export default mergeConfig(viteConfig, defineConfig({
     test: {
         //多项目配置
         projects: [
@@ -11,6 +12,7 @@ export default mergeConfig(viteConfig, defineProject({
             // 或有配置文件的目录
             'src/packages/*',
             '!src/packages/browserEnvironment',
+            '!node_modules/',
             // 你甚至可以运行相同的测试，
             // 但在同一个 "vitest" 进程中有不同的配置
             {
@@ -18,8 +20,10 @@ export default mergeConfig(viteConfig, defineProject({
                 test: {
                     name: 'js-dom',       //名称
                     environment: 'jsdom',    //环境
+                    // environment: 'customEnvironment',    //自定义环境
+                    snapshotSerializers: ['GlobalSerializer.ts'],     //使用全局序列化器配置快照序列化方式
                     include: ['jsdomEnvironment/**/*.{test,spec}.{ts,js}'],    //监控的文件
-                    exclude:['browserEnvironment/**/*.{test,spec}.{ts,js}']
+                    exclude:['browserEnvironment/**/*.{test,spec}.{ts,js}','node_modules'],
                 },
             },
             {
@@ -28,7 +32,7 @@ export default mergeConfig(viteConfig, defineProject({
                     name:'node',
                     environment: 'node',
                     include: ['nodeEnvironment/**/*.{test,spec}.{ts,js}'],
-                    exclude:['browserEnvironment/**/*.{test,spec}.{ts,js}']
+                    exclude:['browserEnvironment/**/*.{test,spec}.{ts,js}','node_modules']
                 },
             },
             /*{

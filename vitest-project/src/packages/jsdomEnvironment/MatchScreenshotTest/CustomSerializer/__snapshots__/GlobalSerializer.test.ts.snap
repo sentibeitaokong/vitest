@@ -1,0 +1,73 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`All Serializers > Date object > Date: 2023-12-25 1`] = `2023-12-25T00:00:00.000Z`;
+
+exports[`All Serializers > Error object > 
+      Error: Error
+      Message: Something went wrong
+      Stack: Error: Something went wrong
+     1`] = `[Error: Something went wrong]`;
+
+exports[`All Serializers > HTML string > 
+      HTML:
+      <div class="container">
+        <h1>
+          Title
+        </h1>
+        <p>
+          Content
+        </p>
+      </div>
+     1`] = `"<div class="container"><h1>Title</h1><p>Content</p></div>"`;
+
+exports[`All Serializers > Large array > 
+      Array[20]: [
+        1,
+        2,
+        3,
+        ... 17 more items
+      ]
+     1`] = `
+[
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+]
+`;
+
+exports[`All Serializers > User with sensitive data > 
+      {
+        "id": 123,
+        "name": "John Doe",
+        "email": "j***.d**@example.com",
+        "password": "***HIDDEN***",
+        "token": "***HIDDEN***",
+        "createdAt": "2023-01-01T00:00:00.000Z"
+      }
+     1`] = `
+{
+  "createdAt": 2023-01-01T00:00:00.000Z,
+  "email": "john.doe@example.com",
+  "id": 123,
+  "name": "John Doe",
+  "password": "secret123",
+  "token": "abc123xyz",
+}
+`;

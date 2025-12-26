@@ -1,3 +1,4 @@
+//测试扩展上下文
 import { expect } from 'vitest'
 import { test } from './extendVariable.ts'
 interface TestData {

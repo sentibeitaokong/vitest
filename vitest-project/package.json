@@ -13,6 +13,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "test": "vitest",
+    "test:update": "vitest --update",
     "coverage": "vitest run --coverage",
     "playwright": "playwright show-trace \"playwright-traces\"",
     "test:ui": "vitest --ui",

@@ -1,3 +1,4 @@
+//测试上下文
 import {describe, it,expect} from 'vitest'
 import {test} from '../ExtendContextTest/extendVariable.ts'
 describe('test context',()=>{
