@@ -10,6 +10,7 @@ export default mergeConfig(viteConfig, defineProject({
             // Vitest 需要一个配置文件列表
             // 或有配置文件的目录
             'src/packages/*',
+            '!src/packages/browserEnvironment',
             // 你甚至可以运行相同的测试，
             // 但在同一个 "vitest" 进程中有不同的配置
             {
@@ -18,6 +19,7 @@ export default mergeConfig(viteConfig, defineProject({
                     name: 'js-dom',       //名称
                     environment: 'jsdom',    //环境
                     include: ['jsdomEnvironment/**/*.{test,spec}.{ts,js}'],    //监控的文件
+                    exclude:['browserEnvironment/**/*.{test,spec}.{ts,js}']
                 },
             },
             {
@@ -26,12 +28,13 @@ export default mergeConfig(viteConfig, defineProject({
                     name:'node',
                     environment: 'node',
                     include: ['nodeEnvironment/**/*.{test,spec}.{ts,js}'],
+                    exclude:['browserEnvironment/**/*.{test,spec}.{ts,js}']
                 },
             },
-            {
+            /*{
                 test: {
                     name: 'browser',
-                    include: ['browserEnvironment/**/*.{test,spec}.{ts,js}'],
+                    include: ['browserEnvironment/!**!/!*.{test,spec}.{ts,js}'],
                     browser: {
                         enabled: true,       //浏览器模式
                         provider: playwright(),
@@ -41,7 +44,7 @@ export default mergeConfig(viteConfig, defineProject({
                         ],
                     }
                 },
-            },
+            },*/
         ],
 
     },

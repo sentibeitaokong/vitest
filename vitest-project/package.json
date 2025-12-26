@@ -14,6 +14,7 @@
     "type-check": "vue-tsc --build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
+    "playwright": "playwright show-trace \"playwright-traces\"",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
     "test:browser": "vitest --config=vitest.browser.config.ts"
@@ -27,6 +28,7 @@
     "@types/node": "^24.10.1",
     "@vitejs/plugin-vue": "^6.0.3",
     "@vitest/browser-playwright": "^4.0.16",
+    "@vitest/coverage-v8": "^4.0.16",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.8.1",
     "happy-dom": "^20.0.11",
