@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="44" failures="0" errors="0" time="0.2007887">
+    <testsuite name="src/packages/nodeEnvironment/EnvironmentTest/environment.test.ts" timestamp="2025-12-29T07:09:03.596Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="0" time="0.0034954">
+        <testcase classname="src/packages/nodeEnvironment/EnvironmentTest/environment.test.ts" name="test" time="0.0018715">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/nodeEnvironment/mockFileTest/fileWriteTest.test.ts" timestamp="2025-12-29T07:09:03.601Z" hostname="DESKTOP-U7CIANF" tests="2" failures="0" errors="0" skipped="0" time="0.00824">
+        <testcase classname="src/packages/nodeEnvironment/mockFileTest/fileWriteTest.test.ts" name="should return correct text" time="0.0047503">
+        </testcase>
+        <testcase classname="src/packages/nodeEnvironment/mockFileTest/fileWriteTest.test.ts" name="can return a value multiple times" time="0.0016243">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/ContextTest/context.test.ts" timestamp="2025-12-29T07:09:03.610Z" hostname="DESKTOP-U7CIANF" tests="6" failures="0" errors="0" skipped="2" time="0.0178801">
+        <testcase classname="src/packages/jsdomEnvironment/ContextTest/context.test.ts" name="test context &gt; context task" time="0.0012721">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ContextTest/context.test.ts" name="test context &gt; context expect" time="0.0013224">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ContextTest/context.test.ts" name="test context &gt; context concurrent" time="0.0107043">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ContextTest/context.test.ts" name="test context &gt; context concurrent" time="0.0106335">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ContextTest/context.test.ts" name="test context &gt; context skip" time="0.0008425">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ContextTest/context.test.ts" name="test context &gt; math is hard" time="0.0011792">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/ExtendContextTest/extendContext.test.ts" timestamp="2025-12-29T07:09:03.623Z" hostname="DESKTOP-U7CIANF" tests="2" failures="0" errors="0" skipped="0" time="0.0057152">
+        <testcase classname="src/packages/jsdomEnvironment/ExtendContextTest/extendContext.test.ts" name="add items to todos" time="0.0032713">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ExtendContextTest/extendContext.test.ts" name="move items from todos to archive" time="0.0007937">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/InitializeFixtures/InitializeFixtures.test.ts" timestamp="2025-12-29T07:09:03.628Z" hostname="DESKTOP-U7CIANF" tests="3" failures="0" errors="0" skipped="0" time="0.0044907">
+        <testcase classname="src/packages/jsdomEnvironment/InitializeFixtures/InitializeFixtures.test.ts" name="skip" time="0.0013956">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/InitializeFixtures/InitializeFixtures.test.ts" name="skip" time="0.0007828">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/InitializeFixtures/InitializeFixtures.test.ts" name="initial" time="0.0004793">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/mockTest/mockClass.test.ts" timestamp="2025-12-29T07:09:03.634Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="0" time="0.0062727">
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockClass.test.ts" name="mockClass test &gt; mockDog test" time="0.0044164">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/mockTest/mockDate.test.ts" timestamp="2025-12-29T07:09:03.636Z" hostname="DESKTOP-U7CIANF" tests="2" failures="0" errors="0" skipped="0" time="0.0100193">
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockDate.test.ts" name="purchasing flow &gt; allows purchases within business hours" time="0.0068832">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockDate.test.ts" name="purchasing flow &gt; disallows purchases outside of business hours" time="0.0011907">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/mockTest/mockExecution.test.ts" timestamp="2025-12-29T07:09:03.640Z" hostname="DESKTOP-U7CIANF" tests="3" failures="0" errors="0" skipped="0" time="0.0145119">
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockExecution.test.ts" name="delayed execution &gt; should execute the function" time="0.0083567">
+            <system-out>
+executed
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockExecution.test.ts" name="delayed execution &gt; should not execute the function" time="0.002288">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockExecution.test.ts" name="delayed execution &gt; should execute every minute" time="0.0018383">
+            <system-out>
+executed
+executed
+
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/mockTest/mockFunction.test.ts" timestamp="2025-12-29T07:09:03.647Z" hostname="DESKTOP-U7CIANF" tests="2" failures="0" errors="0" skipped="0" time="0.0084902">
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockFunction.test.ts" name="should get the latest message with a spy" time="0.0042645">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockFunction.test.ts" name="passing down the mock" time="0.0021997">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/mockTest/mockGlobalVariable.test.ts" timestamp="2025-12-29T07:09:03.651Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="0" time="0.0040076">
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockGlobalVariable.test.ts" name="globalVariable test &gt; globalVariable" time="0.002081">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/mockTest/mockModules.test.ts" timestamp="2025-12-29T07:09:03.653Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="0" time="0.0042395">
+        <testcase classname="src/packages/jsdomEnvironment/mockTest/mockModules.test.ts" name="module error test" time="0.0022862">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/ScreeningTranslationTest/only.test.ts" timestamp="2025-12-29T07:09:03.655Z" hostname="DESKTOP-U7CIANF" tests="3" failures="0" errors="0" skipped="1" time="0.0060984">
+        <testcase classname="src/packages/jsdomEnvironment/ScreeningTranslationTest/only.test.ts" name="suite &gt; test" time="0.0022617">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ScreeningTranslationTest/only.test.ts" name="another suite &gt; skipped test" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ScreeningTranslationTest/only.test.ts" name="another suite &gt; test" time="0.0004041">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/ScreeningTranslationTest/skip.test.ts" timestamp="2025-12-29T07:09:03.661Z" hostname="DESKTOP-U7CIANF" tests="2" failures="0" errors="0" skipped="2" time="0">
+        <testcase classname="src/packages/jsdomEnvironment/ScreeningTranslationTest/skip.test.ts" name="skipped suite &gt; test" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/ScreeningTranslationTest/skip.test.ts" name="suite &gt; skipped test" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/ScreeningTranslationTest/time.test.ts" timestamp="2025-12-29T07:09:03.669Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="0" time="0.0047341">
+        <testcase classname="src/packages/jsdomEnvironment/ScreeningTranslationTest/time.test.ts" name="timeout &gt; timeout limit" time="0.001842">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/ScreeningTranslationTest/todo.test.ts" timestamp="2025-12-29T07:09:03.672Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="1" time="0">
+        <testcase classname="src/packages/jsdomEnvironment/ScreeningTranslationTest/todo.test.ts" name="suite &gt; unimplemented test" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/MatchScreenshotTest/CustomSerializer/CustomSerializer.test.ts" timestamp="2025-12-29T07:09:03.675Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="0" time="0.0115852">
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/CustomSerializer/CustomSerializer.test.ts" name="custom serializer example" time="0.0098259">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/MatchScreenshotTest/CustomSerializer/GlobalSerializer.test.ts" timestamp="2025-12-29T07:09:03.679Z" hostname="DESKTOP-U7CIANF" tests="5" failures="0" errors="0" skipped="0" time="0.0106025">
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/CustomSerializer/GlobalSerializer.test.ts" name="All Serializers &gt; HTML string" time="0.003277">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/CustomSerializer/GlobalSerializer.test.ts" name="All Serializers &gt; Date object" time="0.0018284">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/CustomSerializer/GlobalSerializer.test.ts" name="All Serializers &gt; Error object" time="0.000461">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/CustomSerializer/GlobalSerializer.test.ts" name="All Serializers &gt; User with sensitive data" time="0.0018436">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/CustomSerializer/GlobalSerializer.test.ts" name="All Serializers &gt; Large array" time="0.0007378">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/MatchScreenshotTest/FileScreenshot/FileScreenshot.test.ts" timestamp="2025-12-29T07:09:03.691Z" hostname="DESKTOP-U7CIANF" tests="5" failures="0" errors="0" skipped="0" time="0.0628776">
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/FileScreenshot/FileScreenshot.test.ts" name="fileScreenshot test &gt; html snapshot" time="0.0145041">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/FileScreenshot/FileScreenshot.test.ts" name="fileScreenshot test &gt; simple string snapshot" time="0.009665">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/FileScreenshot/FileScreenshot.test.ts" name="fileScreenshot test &gt; renders basic div" time="0.0115794">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/FileScreenshot/FileScreenshot.test.ts" name="fileScreenshot test &gt; renders nested elements" time="0.0110212">
+        </testcase>
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/FileScreenshot/FileScreenshot.test.ts" name="fileScreenshot test &gt; handles boolean attributes" time="0.0134269">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/MatchScreenshotTest/InlineScreenshot/InlineScrrenshot.test.ts" timestamp="2025-12-29T07:09:03.703Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="0" time="0.0124194">
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/InlineScreenshot/InlineScrrenshot.test.ts" name="inlineScreenshot test" time="0.0104125">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/packages/jsdomEnvironment/MatchScreenshotTest/UseScreenshot/useScreenshot.test.ts" timestamp="2025-12-29T07:09:03.706Z" hostname="DESKTOP-U7CIANF" tests="1" failures="0" errors="0" skipped="0" time="0.0051089">
+        <testcase classname="src/packages/jsdomEnvironment/MatchScreenshotTest/UseScreenshot/useScreenshot.test.ts" name="useScrrenshot test" time="0.0033141">
+        </testcase>
+    </testsuite>
+</testsuites>

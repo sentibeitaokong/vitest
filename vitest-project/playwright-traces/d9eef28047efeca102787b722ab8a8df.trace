@@ -1,0 +1,6 @@
+{"version":8,"type":"context-options","origin":"library","browserName":"chromium","playwrightVersion":"1.57.0","options":{"noDefaultViewport":false,"ignoreHTTPSErrors":true,"selectorEngines":[],"acceptDownloads":"accept","viewport":{"width":1280,"height":720}},"platform":"win32","wallTime":1766994300126,"monotonicTime":40556.32,"sdkLanguage":"javascript","testIdAttributeName":"data-testid","contextId":"browser-context@230fe451df7cb2ff8cb990af5ec2353a"}
+{"type":"screencast-frame","pageId":"page@4cf9b24bad6aa3a1d1a179614076251e","sha1":"page@4cf9b24bad6aa3a1d1a179614076251e-1766994301046.jpeg","width":1280,"height":720,"timestamp":41476.018,"frameSwapWallTime":1766994300442.6602}
+{"type":"before","callId":"call@11","startTime":95119.025,"class":"Page","method":"close","params":{},"pageId":"page@4cf9b24bad6aa3a1d1a179614076251e","beforeSnapshot":"before@call@11"}
+{"type":"event","time":95207.148,"class":"BrowserContext","method":"pageClosed","params":{"pageId":"page@4cf9b24bad6aa3a1d1a179614076251e"}}
+{"type":"after","callId":"call@11","endTime":95207.237,"afterSnapshot":"after@call@11"}
+{"type":"before","callId":"call@14","startTime":95210.022,"class":"BrowserContext","method":"close","params":{},"beforeSnapshot":"before@call@14"}

@@ -11,7 +11,7 @@ export default defineConfig({
         browser: {
             enabled: true,
             provider: playwright(),
-            headless: true,                //无头模式
+            headless: false,                //无头模式
             trace:{
                 mode:'retain-on-failure',                   //追踪模式
                 tracesDir: './playwright-traces',    //追踪文件输出相对于根目录
