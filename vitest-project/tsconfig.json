@@ -12,9 +12,12 @@
     }
   ],
   "compilerOptions": {
+    // ... 其他配置
+    "types": ["vue"],
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
     "target": "es2020",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
     "strict": true,
     "declaration": true,
     "declarationMap": true,
@@ -22,6 +25,10 @@
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
   },
-  "include": ["packages"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"  // 确保包含 .vue 文件
+  ],
 }

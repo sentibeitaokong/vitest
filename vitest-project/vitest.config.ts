@@ -5,7 +5,7 @@ import { playwright } from '@vitest/browser-playwright'
 import vue from '@vitejs/plugin-vue'
 export default mergeConfig(viteConfig, defineConfig({
     test: {
-        reporters: ['html'],
+        // reporters: ['html'],
         /*reporters: ['junit', 'json', 'verbose'], //报告器类型
         outputFile: {                              //按报告器类型输出写入文件
             junit: './junit-report.xml',

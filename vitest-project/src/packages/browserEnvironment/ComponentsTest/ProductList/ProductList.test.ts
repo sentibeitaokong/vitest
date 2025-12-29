@@ -1,7 +1,6 @@
 import {test,expect,vi} from "vitest";
 import {render} from "vitest-browser-vue";
 import ProductList from "./ProductList.vue";
-import { userEvent } from "vitest/browser";
 
 test('ProductList filters and displays products correctly', async () => {
     const mockProducts = [

@@ -11,11 +11,11 @@ export default defineConfig({
         browser: {
             enabled: true,
             provider: playwright(),
-            headless: false,                //无头模式
-            trace:{
-                mode:'retain-on-failure',                   //追踪模式
-                tracesDir: './playwright-traces',    //追踪文件输出相对于根目录
-            },
+            headless: true,                //无头模式
+            // trace:{
+            //     mode:'retain-on-failure',                   //追踪模式
+            //     tracesDir: './playwright-traces',    //追踪文件输出相对于根目录
+            // },
 
             // https://vitest.dev/config/browser/playwright
             //多环境配置   多种浏览器使用统一配置
