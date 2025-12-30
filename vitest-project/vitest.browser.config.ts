@@ -1,9 +1,9 @@
-import {defineConfig} from 'vitest/config'
+import {defineConfig,mergeConfig} from 'vitest/config'
 import {playwright} from '@vitest/browser-playwright'
+import viteConfig from "./vite.config";
 import vue from '@vitejs/plugin-vue'
 
-export default defineConfig({
-    plugins: [vue()],                 //识别vue文件
+export default mergeConfig(viteConfig,defineConfig({
     test: {
         include: ['src/packages/browserEnvironment/**/*.{test,spec}.{ts,js}'],    //访问范围
         name:'brower',
@@ -12,6 +12,7 @@ export default defineConfig({
             enabled: true,
             provider: playwright(),
             headless: true,                //无头模式
+            snapshotSerializers: [],        //禁用快照
             // trace:{
             //     mode:'retain-on-failure',                   //追踪模式
             //     tracesDir: './playwright-traces',    //追踪文件输出相对于根目录
@@ -59,4 +60,4 @@ export default defineConfig({
             // },
         },
     },
-})
+}))
