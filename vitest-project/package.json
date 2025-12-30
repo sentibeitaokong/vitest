@@ -16,7 +16,7 @@
     "test:update": "vitest --update",
     "coverage": "vitest run --coverage",
     "vite:preview": "npx vite preview --outDir ./html",
-    "debugger": "ndb npm run test",
+    "debugger": "ndb npm run dev",
     "browser:debugger": "vitest --inspect-brk --config=vitest.browser.config.ts  --browser --no-file-parallelism",
     "reporter": "vitest --reporter=verbose",
     "playwright": "playwright show-trace \"playwright-traces\"",

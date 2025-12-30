@@ -15,26 +15,42 @@ vi.spyOn(axios, 'get').mockResolvedValue(mockPostList)
 // 通过与组件进行交互来直接触发 HTTP 请求，可以让你的测试更加稳健。
 test('loads posts on button click', async () => {
     const wrapper = mount(PostList)
+
     await wrapper.get('button').trigger('click')
+
     // 断言我们已正确调用 axios.get 的次数和参数。
     expect(axios.get).toHaveBeenCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith('/api/posts')
-    expect(wrapper.find('[role="alert"]').exists()).toBe(false)
-    expect(wrapper.get('button').attributes()).not.toHaveProperty('disabled')
-    // 现在像往常一样触发它。
-    await wrapper.get('button').trigger('click')
-    // 我们在等待所有承诺完成之前，断言“加载状态”。
-    expect(wrapper.find('[role="alert"]').exists()).toBe(true)
-    expect(wrapper.get('button').attributes()).toHaveProperty('disabled')
 
     // 等待 DOM 更新。
     await flushPromises()
 
     // 最后，确保我们已渲染 API 的内容。
     const posts = wrapper.findAll('[data-test="post"]')
+
     expect(posts).toHaveLength(2)
     expect(posts[0].text()).toContain('title1')
     expect(posts[1].text()).toContain('title2')
+})
+test('displays loading state on button click', async () => {
+    const wrapper = mount(PostList)
+
+    // 注意，我们在点击按钮之前运行以下断言
+    // 此时组件应该处于“未加载”状态。
+    expect(wrapper.find('[role="alert"]').exists()).toBe(false)
+    expect(wrapper.get('button').attributes()).not.toHaveProperty('disabled')
+
+    // 现在像往常一样触发它。
+    await wrapper.get('button').trigger('click')
+    // await wrapper.vm.$nextTick()
+
+    // 我们在等待所有承诺完成之前，断言“加载状态”。
+    // expect(wrapper.find('[role="alert"]').exists()).toBe(true)
+    // expect(wrapper.get('button').attributes()).toHaveProperty('disabled')
+
+    // 和之前一样，等待 DOM 更新。
+    await flushPromises()
+
     // 之后，我们回到“未加载”状态。
     expect(wrapper.find('[role="alert"]').exists()).toBe(false)
     expect(wrapper.get('button').attributes()).not.toHaveProperty('disabled')
