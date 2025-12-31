@@ -7,6 +7,7 @@ export default mergeConfig(viteConfig,defineConfig({
     test: {
         include: ['src/packages/browserEnvironment/**/*.{test,spec}.{ts,js}'],    //访问范围
         name:'brower',
+        setupFiles:['testUtilsCustomPlugins.ts'], // 关键：设置全局测试文件
         //浏览器模式
         browser: {
             enabled: true,
